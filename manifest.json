@@ -1,0 +1,571 @@
+{
+    "required_api_version": "2",
+    "name": "T3 Chat",
+    "description": "Start a new chat in T3 Chat",
+    "developer_name": "Teo Milić",
+    "icon": "images/icon.png",
+    "options": {
+        "query_debounce": 0.02
+    },
+    "preferences": [
+        {
+            "id": "kw",
+            "type": "keyword",
+            "name": "T3 Chat",
+            "description": "Open a thread in T3 Chat",
+            "default_value": "t3"
+        },
+        {
+            "id": "model_0",
+            "type": "select",
+            "name": "Select Default Model",
+            "description": "Choose the default model that will be used to open your thread. Models marked with 💎 will use premium credits. Please do not select the seperator options.",
+            "options": [
+                {
+                    "value": "sep",
+                    "text": "======== Google Models ========"
+                },
+                {
+                    "value": "gemini-2.5-flash-thinking",
+                    "text": "Gemini 2.5 Flash (Thinking)"
+                },
+                {
+                    "value": "gemini-2.5-flash",
+                    "text": "Gemini 2.5 Flash"
+                },
+                {
+                    "value": "gemini-2.5-pro",
+                    "text": "💎 Gemini 2.5 Pro"
+                },
+                {
+                    "value": "gemini-3-pro",
+                    "text": "💎 Gemini 3 Pro"
+                },
+                {
+                    "value": "sep",
+                    "text": "======== OpenAI Models ========"
+                },
+                {
+                    "value": "gpt-5-chat",
+                    "text": "ChatGPT 5"
+                },
+                {
+                    "value": "gpt-5.1-thinking",
+                    "text": "💎 ChatGPT 5 (Reasoning)"
+                },
+                {
+                    "value": "gpt-5.1-instant",
+                    "text": "ChatGPT 5.1 (Instant)"
+                },
+                {
+                    "value": "gpt-4o",
+                    "text": "ChatGPT 4o"
+                },
+                {
+                    "value": "gpt-oss-20b",
+                    "text": "ChatGPT OSS 20B"
+                },
+                {
+                    "value": "gpt-oss-120b",
+                    "text": "ChatGPT OSS 120B"
+                },
+                {
+                    "value": "sep",
+                    "text": "======== Claude Models ========"
+                },
+                {
+                    "value": "claude-4-sonnet",
+                    "text": "💎 Claude 4 Sonnet"
+                },
+                {
+                    "value": "claude-4-sonnet-reasoning",
+                    "text": "💎 Claude 4 Sonnet (Reasoning)"
+                },
+                {
+                    "value": "claude-4.5-haiku",
+                    "text": "Claude 4.5 Haiku"
+                },
+                {
+                    "value": "claude-4.5-haiku-reasoning",
+                    "text": "Claude 4.5 Haiku (Reasoning)"
+                },
+                {
+                    "value": "claude-4.5-sonnet",
+                    "text": "💎 Claude 4.5 Sonnet"
+                },
+                {
+                    "value": "claude-4.5-sonnet-reasoning",
+                    "text": "💎 Claude 4.5 Sonnet (Reasoning)"
+                }
+            ],
+            "default_value": "gemini-2.5-flash-thinking"
+        },
+        {
+            "id": "model_0_override",
+            "type": "input",
+            "name": "Advanced: Override Default Model Select",
+            "description": "If this field isn't empty, the model chosen with 'Select Model' will be overriden with the supplied model tag. To obtain a model tag, go to Settings>Models>Search URL, then copy the phrase after 'model=' (example: claude-4.5-haiku-reasoning).",
+            "default_value": ""
+        },
+        {
+            "id": "model_1",
+            "type": "select",
+            "name": "Slot 1: Select Model",
+            "description": "Choose the model that will be used in the first slot after the default option. Models marked with 💎 will use premium credits. Please do not select the seperator options.",
+            "options": [
+                {
+                    "value": "sep",
+                    "text": "======== Google Models ========"
+                },
+                {
+                    "value": "gemini-2.5-flash-thinking",
+                    "text": "Gemini 2.5 Flash (Thinking)"
+                },
+                {
+                    "value": "gemini-2.5-flash",
+                    "text": "Gemini 2.5 Flash"
+                },
+                {
+                    "value": "gemini-2.5-pro",
+                    "text": "💎 Gemini 2.5 Pro"
+                },
+                {
+                    "value": "gemini-3-pro",
+                    "text": "💎 Gemini 3 Pro"
+                },
+                {
+                    "value": "sep",
+                    "text": "======== OpenAI Models ========"
+                },
+                {
+                    "value": "gpt-5-chat",
+                    "text": "ChatGPT 5"
+                },
+                {
+                    "value": "gpt-5.1-thinking",
+                    "text": "💎 ChatGPT 5 (Reasoning)"
+                },
+                {
+                    "value": "gpt-5.1-instant",
+                    "text": "ChatGPT 5.1 (Instant)"
+                },
+                {
+                    "value": "gpt-4o",
+                    "text": "ChatGPT 4o"
+                },
+                {
+                    "value": "gpt-oss-20b",
+                    "text": "ChatGPT OSS 20B"
+                },
+                {
+                    "value": "gpt-oss-120b",
+                    "text": "ChatGPT OSS 120B"
+                },
+                {
+                    "value": "sep",
+                    "text": "======== Claude Models ========"
+                },
+                {
+                    "value": "claude-4-sonnet",
+                    "text": "💎 Claude 4 Sonnet"
+                },
+                {
+                    "value": "claude-4-sonnet-reasoning",
+                    "text": "💎 Claude 4 Sonnet (Reasoning)"
+                },
+                {
+                    "value": "claude-4.5-haiku",
+                    "text": "Claude 4.5 Haiku"
+                },
+                {
+                    "value": "claude-4.5-haiku-reasoning",
+                    "text": "Claude 4.5 Haiku (Reasoning)"
+                },
+                {
+                    "value": "claude-4.5-sonnet",
+                    "text": "💎 Claude 4.5 Sonnet"
+                },
+                {
+                    "value": "claude-4.5-sonnet-reasoning",
+                    "text": "💎 Claude 4.5 Sonnet (Reasoning)"
+                }
+            ],
+            "default_value": "gemini-3-pro"
+        },
+        {
+            "id": "model_1_override",
+            "type": "input",
+            "name": "Advanced: Override Slot 1 Model Select",
+            "description": "If this field isn't empty, the model chosen with 'Slot 1: Select Model' will be overriden with the supplied model tag. To obtain a model tag, go to Settings>Models>Search URL, then copy the phrase after 'model=' (example: claude-4.5-haiku-reasoning).",
+            "default_value": ""
+        },
+        {
+            "id": "model_2",
+            "type": "select",
+            "name": "Slot 2: Select Model",
+            "description": "Choose the model that will be used in the second slot after the default option. Models marked with 💎 will use premium credits. Please do not select the seperator options.",
+            "options": [
+                {
+                    "value": "sep",
+                    "text": "======== Google Models ========"
+                },
+                {
+                    "value": "gemini-2.5-flash-thinking",
+                    "text": "Gemini 2.5 Flash (Thinking)"
+                },
+                {
+                    "value": "gemini-2.5-flash",
+                    "text": "Gemini 2.5 Flash"
+                },
+                {
+                    "value": "gemini-2.5-pro",
+                    "text": "💎 Gemini 2.5 Pro"
+                },
+                {
+                    "value": "gemini-3-pro",
+                    "text": "💎 Gemini 3 Pro"
+                },
+                {
+                    "value": "sep",
+                    "text": "======== OpenAI Models ========"
+                },
+                {
+                    "value": "gpt-5-chat",
+                    "text": "ChatGPT 5"
+                },
+                {
+                    "value": "gpt-5.1-thinking",
+                    "text": "💎 ChatGPT 5 (Reasoning)"
+                },
+                {
+                    "value": "gpt-5.1-instant",
+                    "text": "ChatGPT 5.1 (Instant)"
+                },
+                {
+                    "value": "gpt-4o",
+                    "text": "ChatGPT 4o"
+                },
+                {
+                    "value": "gpt-oss-20b",
+                    "text": "ChatGPT OSS 20B"
+                },
+                {
+                    "value": "gpt-oss-120b",
+                    "text": "ChatGPT OSS 120B"
+                },
+                {
+                    "value": "sep",
+                    "text": "======== Claude Models ========"
+                },
+                {
+                    "value": "claude-4-sonnet",
+                    "text": "💎 Claude 4 Sonnet"
+                },
+                {
+                    "value": "claude-4-sonnet-reasoning",
+                    "text": "💎 Claude 4 Sonnet (Reasoning)"
+                },
+                {
+                    "value": "claude-4.5-haiku",
+                    "text": "Claude 4.5 Haiku"
+                },
+                {
+                    "value": "claude-4.5-haiku-reasoning",
+                    "text": "Claude 4.5 Haiku (Reasoning)"
+                },
+                {
+                    "value": "claude-4.5-sonnet",
+                    "text": "💎 Claude 4.5 Sonnet"
+                },
+                {
+                    "value": "claude-4.5-sonnet-reasoning",
+                    "text": "💎 Claude 4.5 Sonnet (Reasoning)"
+                }
+            ],
+            "default_value": "gpt-5-chat"
+        },
+        {
+            "id": "model_2_override",
+            "type": "input",
+            "name": "Advanced: Override Slot 2 Model Select",
+            "description": "If this field isn't empty, the model chosen with 'Slot 2: Select Model' will be overriden with the supplied model tag. To obtain a model tag, go to Settings>Models>Search URL, then copy the phrase after 'model=' (example: claude-4.5-haiku-reasoning).",
+            "default_value": ""
+        },
+        {
+            "id": "model_3",
+            "type": "select",
+            "name": "Slot 3: Select Model",
+            "description": "Choose the model that will be used in the third slot after the default option. Models marked with 💎 will use premium credits. Please do not select the seperator options.",
+            "options": [
+                {
+                    "value": "sep",
+                    "text": "======== Google Models ========"
+                },
+                {
+                    "value": "gemini-2.5-flash-thinking",
+                    "text": "Gemini 2.5 Flash (Thinking)"
+                },
+                {
+                    "value": "gemini-2.5-flash",
+                    "text": "Gemini 2.5 Flash"
+                },
+                {
+                    "value": "gemini-2.5-pro",
+                    "text": "💎 Gemini 2.5 Pro"
+                },
+                {
+                    "value": "gemini-3-pro",
+                    "text": "💎 Gemini 3 Pro"
+                },
+                {
+                    "value": "sep",
+                    "text": "======== OpenAI Models ========"
+                },
+                {
+                    "value": "gpt-5-chat",
+                    "text": "ChatGPT 5"
+                },
+                {
+                    "value": "gpt-5.1-thinking",
+                    "text": "💎 ChatGPT 5 (Reasoning)"
+                },
+                {
+                    "value": "gpt-5.1-instant",
+                    "text": "ChatGPT 5.1 (Instant)"
+                },
+                {
+                    "value": "gpt-4o",
+                    "text": "ChatGPT 4o"
+                },
+                {
+                    "value": "gpt-oss-20b",
+                    "text": "ChatGPT OSS 20B"
+                },
+                {
+                    "value": "gpt-oss-120b",
+                    "text": "ChatGPT OSS 120B"
+                },
+                {
+                    "value": "sep",
+                    "text": "======== Claude Models ========"
+                },
+                {
+                    "value": "claude-4-sonnet",
+                    "text": "💎 Claude 4 Sonnet"
+                },
+                {
+                    "value": "claude-4-sonnet-reasoning",
+                    "text": "💎 Claude 4 Sonnet (Reasoning)"
+                },
+                {
+                    "value": "claude-4.5-haiku",
+                    "text": "Claude 4.5 Haiku"
+                },
+                {
+                    "value": "claude-4.5-haiku-reasoning",
+                    "text": "Claude 4.5 Haiku (Reasoning)"
+                },
+                {
+                    "value": "claude-4.5-sonnet",
+                    "text": "💎 Claude 4.5 Sonnet"
+                },
+                {
+                    "value": "claude-4.5-sonnet-reasoning",
+                    "text": "💎 Claude 4.5 Sonnet (Reasoning)"
+                }
+            ],
+            "default_value": "gpt-5.1-thinking"
+        },
+        {
+            "id": "model_3_override",
+            "type": "input",
+            "name": "Advanced: Override Slot 3 Model Select",
+            "description": "If this field isn't empty, the model chosen with 'Slot 3: Select Model' will be overriden with the supplied model tag. To obtain a model tag, go to Settings>Models>Search URL, then copy the phrase after 'model=' (example: claude-4.5-haiku-reasoning).",
+            "default_value": ""
+        },
+        {
+            "id": "model_4",
+            "type": "select",
+            "name": "Slot 4: Select Model",
+            "description": "Choose the model that will be used in the fourth slot after the default option. Models marked with 💎 will use premium credits. Please do not select the seperator options.",
+            "options": [
+                {
+                    "value": "sep",
+                    "text": "======== Google Models ========"
+                },
+                {
+                    "value": "gemini-2.5-flash-thinking",
+                    "text": "Gemini 2.5 Flash (Thinking)"
+                },
+                {
+                    "value": "gemini-2.5-flash",
+                    "text": "Gemini 2.5 Flash"
+                },
+                {
+                    "value": "gemini-2.5-pro",
+                    "text": "💎 Gemini 2.5 Pro"
+                },
+                {
+                    "value": "gemini-3-pro",
+                    "text": "💎 Gemini 3 Pro"
+                },
+                {
+                    "value": "sep",
+                    "text": "======== OpenAI Models ========"
+                },
+                {
+                    "value": "gpt-5-chat",
+                    "text": "ChatGPT 5"
+                },
+                {
+                    "value": "gpt-5.1-thinking",
+                    "text": "💎 ChatGPT 5 (Reasoning)"
+                },
+                {
+                    "value": "gpt-5.1-instant",
+                    "text": "ChatGPT 5.1 (Instant)"
+                },
+                {
+                    "value": "gpt-4o",
+                    "text": "ChatGPT 4o"
+                },
+                {
+                    "value": "gpt-oss-20b",
+                    "text": "ChatGPT OSS 20B"
+                },
+                {
+                    "value": "gpt-oss-120b",
+                    "text": "ChatGPT OSS 120B"
+                },
+                {
+                    "value": "sep",
+                    "text": "======== Claude Models ========"
+                },
+                {
+                    "value": "claude-4-sonnet",
+                    "text": "💎 Claude 4 Sonnet"
+                },
+                {
+                    "value": "claude-4-sonnet-reasoning",
+                    "text": "💎 Claude 4 Sonnet (Reasoning)"
+                },
+                {
+                    "value": "claude-4.5-haiku",
+                    "text": "Claude 4.5 Haiku"
+                },
+                {
+                    "value": "claude-4.5-haiku-reasoning",
+                    "text": "Claude 4.5 Haiku (Reasoning)"
+                },
+                {
+                    "value": "claude-4.5-sonnet",
+                    "text": "💎 Claude 4.5 Sonnet"
+                },
+                {
+                    "value": "claude-4.5-sonnet-reasoning",
+                    "text": "💎 Claude 4.5 Sonnet (Reasoning)"
+                }
+            ],
+            "default_value": "claude-4.5-haiku"
+        },
+        {
+            "id": "model_4_override",
+            "type": "input",
+            "name": "Advanced: Override Slot 4 Model Select",
+            "description": "If this field isn't empty, the model chosen with 'Slot 4: Select Model' will be overriden with the supplied model tag. To obtain a model tag, go to Settings>Models>Search URL, then copy the phrase after 'model=' (example: claude-4.5-haiku-reasoning).",
+            "default_value": ""
+        },
+        {
+            "id": "model_5",
+            "type": "select",
+            "name": "Slot 5: Select Model",
+            "description": "Choose the model that will be used in the fifth slot after the default option. Models marked with 💎 will use premium credits. Please do not select the seperator options.",
+            "options": [
+                {
+                    "value": "sep",
+                    "text": "======== Google Models ========"
+                },
+                {
+                    "value": "gemini-2.5-flash-thinking",
+                    "text": "Gemini 2.5 Flash (Thinking)"
+                },
+                {
+                    "value": "gemini-2.5-flash",
+                    "text": "Gemini 2.5 Flash"
+                },
+                {
+                    "value": "gemini-2.5-pro",
+                    "text": "💎 Gemini 2.5 Pro"
+                },
+                {
+                    "value": "gemini-3-pro",
+                    "text": "💎 Gemini 3 Pro"
+                },
+                {
+                    "value": "sep",
+                    "text": "======== OpenAI Models ========"
+                },
+                {
+                    "value": "gpt-5-chat",
+                    "text": "ChatGPT 5"
+                },
+                {
+                    "value": "gpt-5.1-thinking",
+                    "text": "💎 ChatGPT 5 (Reasoning)"
+                },
+                {
+                    "value": "gpt-5.1-instant",
+                    "text": "ChatGPT 5.1 (Instant)"
+                },
+                {
+                    "value": "gpt-4o",
+                    "text": "ChatGPT 4o"
+                },
+                {
+                    "value": "gpt-oss-20b",
+                    "text": "ChatGPT OSS 20B"
+                },
+                {
+                    "value": "gpt-oss-120b",
+                    "text": "ChatGPT OSS 120B"
+                },
+                {
+                    "value": "sep",
+                    "text": "======== Claude Models ========"
+                },
+                {
+                    "value": "claude-4-sonnet",
+                    "text": "💎 Claude 4 Sonnet"
+                },
+                {
+                    "value": "claude-4-sonnet-reasoning",
+                    "text": "💎 Claude 4 Sonnet (Reasoning)"
+                },
+                {
+                    "value": "claude-4.5-haiku",
+                    "text": "Claude 4.5 Haiku"
+                },
+                {
+                    "value": "claude-4.5-haiku-reasoning",
+                    "text": "Claude 4.5 Haiku (Reasoning)"
+                },
+                {
+                    "value": "claude-4.5-sonnet",
+                    "text": "💎 Claude 4.5 Sonnet"
+                },
+                {
+                    "value": "claude-4.5-sonnet-reasoning",
+                    "text": "💎 Claude 4.5 Sonnet (Reasoning)"
+                }
+            ],
+            "default_value": "claude-4.5-sonnet"
+        },
+        {
+            "id": "model_5_override",
+            "type": "input",
+            "name": "Advanced: Override Slot 5 Model Select",
+            "description": "If this field isn't empty, the model chosen with 'Slot 5: Select Model' will be overriden with the supplied model tag. To obtain a model tag, go to Settings>Models>Search URL, then copy the phrase after 'model=' (example: claude-4.5-haiku-reasoning).",
+            "default_value": ""
+        }
+    ]
+}
