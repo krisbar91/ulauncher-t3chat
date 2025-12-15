@@ -1,8 +1,8 @@
 {
     "required_api_version": "2",
-    "name": "T3 Chat",
+    "name": "T3",
     "description": "Start a new chat in T3 Chat",
-    "developer_name": "Teo Milić",
+    "developer_name": "Kristian Barli",
     "icon": "images/t3.png",
     "options": {
         "query_debounce": 0.02
