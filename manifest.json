@@ -54,6 +54,10 @@
                     "text": "ChatGPT 5 (Reasoning)"
                 },
                 {
+                    "value": "gpt-5.2-reasoning",
+                    "text": "ChatGPT 5.2 Reasoning"
+                },
+                {
                     "value": "gpt-5.1-instant",
                     "text": "ChatGPT 5.1 (Instant)"
                 },
@@ -144,6 +148,10 @@
                 {
                     "value": "gpt-5.1-thinking",
                     "text": "ChatGPT 5 (Reasoning)"
+                },
+                {
+                    "value": "gpt-5.2-reasoning",
+                    "text": "ChatGPT 5.2 Reasoning"
                 },
                 {
                     "value": "gpt-5.1-instant",
@@ -238,6 +246,10 @@
                     "text": "ChatGPT 5 (Reasoning)"
                 },
                 {
+                    "value": "gpt-5.2-reasoning",
+                    "text": "ChatGPT 5.2 Reasoning"
+                },
+                {
                     "value": "gpt-5.1-instant",
                     "text": "ChatGPT 5.1 (Instant)"
                 },
@@ -328,6 +340,10 @@
                 {
                     "value": "gpt-5.1-thinking",
                     "text": "ChatGPT 5 (Reasoning)"
+                },
+                {
+                    "value": "gpt-5.2-reasoning",
+                    "text": "ChatGPT 5.2 Reasoning"
                 },
                 {
                     "value": "gpt-5.1-instant",
@@ -422,6 +438,10 @@
                     "text": "ChatGPT 5 (Reasoning)"
                 },
                 {
+                    "value": "gpt-5.2-reasoning",
+                    "text": "ChatGPT 5.2 Reasoning"
+                },
+                {
                     "value": "gpt-5.1-instant",
                     "text": "ChatGPT 5.1 (Instant)"
                 },
@@ -512,6 +532,10 @@
                 {
                     "value": "gpt-5.1-thinking",
                     "text": "ChatGPT 5 (Reasoning)"
+                },
+                {
+                    "value": "gpt-5.2-reasoning",
+                    "text": "ChatGPT 5.2 Reasoning"
                 },
                 {
                     "value": "gpt-5.1-instant",
