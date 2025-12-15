@@ -59,13 +59,8 @@ class KeywordQueryEventListener(EventListener):
                 model_display = model_override
             else:
                 model_display = model_list[model]
-            
 
-            slot_name = ""
-            if i == 0:
-                slot_name = f"Default: {model_display}"
-            else:
-                slot_name = f"Slot {i}: {model_display}"
+            slot_name = f"{model_display}"
 
             option_list.append(ExtensionResultItem(icon='images/t3.png', name=slot_name, description=f"{user_arg}", on_enter=ExtensionCustomAction({"query": user_arg, "model": model }, keep_app_open=True)))
         return RenderResultListAction(option_list)
