@@ -3,7 +3,7 @@
     "name": "T3 Chat",
     "description": "Start a new chat in T3 Chat",
     "developer_name": "Teo Milić",
-    "icon": "images/icon.png",
+    "icon": "images/t3.png",
     "options": {
         "query_debounce": 0.02
     },
