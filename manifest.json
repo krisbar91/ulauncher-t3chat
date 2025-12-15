@@ -34,6 +34,10 @@
                     "text": "Gemini 2.5 Flash"
                 },
                 {
+                    "value": "gemini-2.5-flash-image-preview",
+                    "text": "Nano Banana"
+                },
+                {
                     "value": "gemini-2.5-pro",
                     "text": "Gemini 2.5 Pro"
                 },
@@ -128,6 +132,10 @@
                 {
                     "value": "gemini-2.5-flash",
                     "text": "Gemini 2.5 Flash"
+                },
+                {
+                    "value": "gemini-2.5-flash-image-preview",
+                    "text": "Nano Banana"
                 },
                 {
                     "value": "gemini-2.5-pro",
@@ -226,6 +234,10 @@
                     "text": "Gemini 2.5 Flash"
                 },
                 {
+                    "value": "gemini-2.5-flash-image-preview",
+                    "text": "Nano Banana"
+                },
+                {
                     "value": "gemini-2.5-pro",
                     "text": "Gemini 2.5 Pro"
                 },
@@ -320,6 +332,10 @@
                 {
                     "value": "gemini-2.5-flash",
                     "text": "Gemini 2.5 Flash"
+                },
+                {
+                    "value": "gemini-2.5-flash-image-preview",
+                    "text": "Nano Banana"
                 },
                 {
                     "value": "gemini-2.5-pro",
@@ -418,6 +434,10 @@
                     "text": "Gemini 2.5 Flash"
                 },
                 {
+                    "value": "gemini-2.5-flash-image-preview",
+                    "text": "Nano Banana"
+                },
+                {
                     "value": "gemini-2.5-pro",
                     "text": "Gemini 2.5 Pro"
                 },
@@ -512,6 +532,10 @@
                 {
                     "value": "gemini-2.5-flash",
                     "text": "Gemini 2.5 Flash"
+                },
+                {
+                    "value": "gemini-2.5-flash-image-preview",
+                    "text": "Nano Banana"
                 },
                 {
                     "value": "gemini-2.5-pro",

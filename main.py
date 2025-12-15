@@ -12,6 +12,7 @@ import urllib.parse
 model_list = {
     'gemini-2.5-flash-thinking': 'Gemini 2.5 Flash (Thinking)',
     'gemini-2.5-flash': 'Gemini 2.5 Flash',
+    'gemini-2.5-flash-image-preview': 'Nano Banana',
     'gemini-2.5-pro': 'Gemini 2.5 Pro',
     'gemini-3-pro': 'Gemini 3 Pro',
     'gpt-5-chat': 'ChatGPT 5',
