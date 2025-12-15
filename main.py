@@ -88,10 +88,7 @@ class ItemEnterEventListener(EventListener):
         url = f"https://t3.chat/new?q={chat_query}&model={chat_model}"
 
         webbrowser.open(url, new=2, autoraise=True)
-        return RenderResultListAction([ExtensionResultItem(icon='images/icon.png',
-                                                           name="Thread Opened! :)",
-                                                           description=f"Model used: {chat_model}",
-                                                           on_enter=HideWindowAction())])
+        return HideWindowAction()
 
 if __name__ == '__main__':
     T3Chat().run()
