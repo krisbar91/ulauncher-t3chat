@@ -12,20 +12,20 @@ import urllib.parse
 model_list = {
     'gemini-2.5-flash-thinking': 'Gemini 2.5 Flash (Thinking)',
     'gemini-2.5-flash': 'Gemini 2.5 Flash',
-    'gemini-2.5-pro': '💎 Gemini 2.5 Pro',
-    'gemini-3-pro': '💎 Gemini 3 Pro',
+    'gemini-2.5-pro': 'Gemini 2.5 Pro',
+    'gemini-3-pro': 'Gemini 3 Pro',
     'gpt-5-chat': 'ChatGPT 5',
-    'gpt-5.1-thinking': '💎 ChatGPT 5 (Reasoning)',
+    'gpt-5.1-thinking': 'ChatGPT 5 (Reasoning)',
     'gpt-5.1-instant': 'ChatGPT 5.1 (Instant)',
     'gpt-4o': 'ChatGPT 4o',
     'gpt-oss-20b': 'ChatGPT OSS 20B',
     'gpt-oss-120b': 'ChatGPT OSS 120B',
-    'claude-4-sonnet': '💎 Claude 4 Sonnet',
-    'claude-4-sonnet-reasoning': '💎 Claude 4 Sonnet (Reasoning)',
+    'claude-4-sonnet': 'Claude 4 Sonnet',
+    'claude-4-sonnet-reasoning': 'Claude 4 Sonnet (Reasoning)',
     'claude-4.5-haiku': 'Claude 4.5 Haiku',
     'claude-4.5-haiku-reasoning': 'Claude 4.5 Haiku (Reasoning)',
-    'claude-4.5-sonnet': '💎 Claude 4.5 Sonnet',
-    'claude-4.5-sonnet-reasoning': '💎 Claude 4.5 Sonnet (Reasoning)'
+    'claude-4.5-sonnet': 'Claude 4.5 Sonnet',
+    'claude-4.5-sonnet-reasoning': 'Claude 4.5 Sonnet (Reasoning)'
 }
 
 class T3Chat(Extension):
@@ -67,7 +67,7 @@ class KeywordQueryEventListener(EventListener):
             else:
                 slot_name = f"Slot {i}: {model_display}"
 
-            option_list.append(ExtensionResultItem(icon='images/icon.png', name=slot_name, description=f"{user_arg}", on_enter=ExtensionCustomAction({"query": user_arg, "model": model }, keep_app_open=True)))
+            option_list.append(ExtensionResultItem(icon='images/t3.png', name=slot_name, description=f"{user_arg}", on_enter=ExtensionCustomAction({"query": user_arg, "model": model }, keep_app_open=True)))
         return RenderResultListAction(option_list)
         """
         Due to the way Ulauncher renders entries, when trying to populate the results with all models, they clip out of the screen. For now, only five model options are provided.
@@ -75,7 +75,7 @@ class KeywordQueryEventListener(EventListener):
 
         for k,v in model_list.items():
             option_list.append(
-                ExtensionResultItem(icon='images/icon.png', name=v, description=f"{user_arg}", on_enter=ExtensionCustomAction({"query": user_arg, "model": k }, keep_app_open=True))
+                ExtensionResultItem(icon='images/t3.png', name=v, description=f"{user_arg}", on_enter=ExtensionCustomAction({"query": user_arg, "model": k }, keep_app_open=True))
             ) 
         """     
     
