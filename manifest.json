@@ -19,7 +19,7 @@
             "id": "model_0",
             "type": "select",
             "name": "Select Default Model",
-            "description": "Choose the default model that will be used to open your thread. Models marked with 💎 will use premium credits. Please do not select the seperator options.",
+            "description": "Choose the default model that will be used to open your thread. Models marked with will use premium credits. Please do not select the seperator options.",
             "options": [
                 {
                     "value": "sep",
@@ -35,11 +35,11 @@
                 },
                 {
                     "value": "gemini-2.5-pro",
-                    "text": "💎 Gemini 2.5 Pro"
+                    "text": "Gemini 2.5 Pro"
                 },
                 {
                     "value": "gemini-3-pro",
-                    "text": "💎 Gemini 3 Pro"
+                    "text": "Gemini 3 Pro"
                 },
                 {
                     "value": "sep",
@@ -51,7 +51,7 @@
                 },
                 {
                     "value": "gpt-5.1-thinking",
-                    "text": "💎 ChatGPT 5 (Reasoning)"
+                    "text": "ChatGPT 5 (Reasoning)"
                 },
                 {
                     "value": "gpt-5.1-instant",
@@ -75,11 +75,11 @@
                 },
                 {
                     "value": "claude-4-sonnet",
-                    "text": "💎 Claude 4 Sonnet"
+                    "text": "Claude 4 Sonnet"
                 },
                 {
                     "value": "claude-4-sonnet-reasoning",
-                    "text": "💎 Claude 4 Sonnet (Reasoning)"
+                    "text": "Claude 4 Sonnet (Reasoning)"
                 },
                 {
                     "value": "claude-4.5-haiku",
@@ -91,11 +91,11 @@
                 },
                 {
                     "value": "claude-4.5-sonnet",
-                    "text": "💎 Claude 4.5 Sonnet"
+                    "text": "Claude 4.5 Sonnet"
                 },
                 {
                     "value": "claude-4.5-sonnet-reasoning",
-                    "text": "💎 Claude 4.5 Sonnet (Reasoning)"
+                    "text": "Claude 4.5 Sonnet (Reasoning)"
                 }
             ],
             "default_value": "gemini-2.5-flash-thinking"
@@ -111,7 +111,7 @@
             "id": "model_1",
             "type": "select",
             "name": "Slot 1: Select Model",
-            "description": "Choose the model that will be used in the first slot after the default option. Models marked with 💎 will use premium credits. Please do not select the seperator options.",
+            "description": "Choose the model that will be used in the first slot after the default option. Models marked with will use premium credits. Please do not select the seperator options.",
             "options": [
                 {
                     "value": "sep",
@@ -127,11 +127,11 @@
                 },
                 {
                     "value": "gemini-2.5-pro",
-                    "text": "💎 Gemini 2.5 Pro"
+                    "text": "Gemini 2.5 Pro"
                 },
                 {
                     "value": "gemini-3-pro",
-                    "text": "💎 Gemini 3 Pro"
+                    "text": "Gemini 3 Pro"
                 },
                 {
                     "value": "sep",
@@ -143,7 +143,7 @@
                 },
                 {
                     "value": "gpt-5.1-thinking",
-                    "text": "💎 ChatGPT 5 (Reasoning)"
+                    "text": "ChatGPT 5 (Reasoning)"
                 },
                 {
                     "value": "gpt-5.1-instant",
@@ -167,11 +167,11 @@
                 },
                 {
                     "value": "claude-4-sonnet",
-                    "text": "💎 Claude 4 Sonnet"
+                    "text": "Claude 4 Sonnet"
                 },
                 {
                     "value": "claude-4-sonnet-reasoning",
-                    "text": "💎 Claude 4 Sonnet (Reasoning)"
+                    "text": "Claude 4 Sonnet (Reasoning)"
                 },
                 {
                     "value": "claude-4.5-haiku",
@@ -183,11 +183,11 @@
                 },
                 {
                     "value": "claude-4.5-sonnet",
-                    "text": "💎 Claude 4.5 Sonnet"
+                    "text": "Claude 4.5 Sonnet"
                 },
                 {
                     "value": "claude-4.5-sonnet-reasoning",
-                    "text": "💎 Claude 4.5 Sonnet (Reasoning)"
+                    "text": "Claude 4.5 Sonnet (Reasoning)"
                 }
             ],
             "default_value": "gemini-3-pro"
@@ -203,7 +203,7 @@
             "id": "model_2",
             "type": "select",
             "name": "Slot 2: Select Model",
-            "description": "Choose the model that will be used in the second slot after the default option. Models marked with 💎 will use premium credits. Please do not select the seperator options.",
+            "description": "Choose the model that will be used in the second slot after the default option. Models marked with will use premium credits. Please do not select the seperator options.",
             "options": [
                 {
                     "value": "sep",
@@ -219,11 +219,11 @@
                 },
                 {
                     "value": "gemini-2.5-pro",
-                    "text": "💎 Gemini 2.5 Pro"
+                    "text": "Gemini 2.5 Pro"
                 },
                 {
                     "value": "gemini-3-pro",
-                    "text": "💎 Gemini 3 Pro"
+                    "text": "Gemini 3 Pro"
                 },
                 {
                     "value": "sep",
@@ -235,7 +235,7 @@
                 },
                 {
                     "value": "gpt-5.1-thinking",
-                    "text": "💎 ChatGPT 5 (Reasoning)"
+                    "text": "ChatGPT 5 (Reasoning)"
                 },
                 {
                     "value": "gpt-5.1-instant",
@@ -259,11 +259,11 @@
                 },
                 {
                     "value": "claude-4-sonnet",
-                    "text": "💎 Claude 4 Sonnet"
+                    "text": "Claude 4 Sonnet"
                 },
                 {
                     "value": "claude-4-sonnet-reasoning",
-                    "text": "💎 Claude 4 Sonnet (Reasoning)"
+                    "text": "Claude 4 Sonnet (Reasoning)"
                 },
                 {
                     "value": "claude-4.5-haiku",
@@ -275,11 +275,11 @@
                 },
                 {
                     "value": "claude-4.5-sonnet",
-                    "text": "💎 Claude 4.5 Sonnet"
+                    "text": "Claude 4.5 Sonnet"
                 },
                 {
                     "value": "claude-4.5-sonnet-reasoning",
-                    "text": "💎 Claude 4.5 Sonnet (Reasoning)"
+                    "text": "Claude 4.5 Sonnet (Reasoning)"
                 }
             ],
             "default_value": "gpt-5-chat"
@@ -295,7 +295,7 @@
             "id": "model_3",
             "type": "select",
             "name": "Slot 3: Select Model",
-            "description": "Choose the model that will be used in the third slot after the default option. Models marked with 💎 will use premium credits. Please do not select the seperator options.",
+            "description": "Choose the model that will be used in the third slot after the default option. Models marked with will use premium credits. Please do not select the seperator options.",
             "options": [
                 {
                     "value": "sep",
@@ -311,11 +311,11 @@
                 },
                 {
                     "value": "gemini-2.5-pro",
-                    "text": "💎 Gemini 2.5 Pro"
+                    "text": "Gemini 2.5 Pro"
                 },
                 {
                     "value": "gemini-3-pro",
-                    "text": "💎 Gemini 3 Pro"
+                    "text": "Gemini 3 Pro"
                 },
                 {
                     "value": "sep",
@@ -327,7 +327,7 @@
                 },
                 {
                     "value": "gpt-5.1-thinking",
-                    "text": "💎 ChatGPT 5 (Reasoning)"
+                    "text": "ChatGPT 5 (Reasoning)"
                 },
                 {
                     "value": "gpt-5.1-instant",
@@ -351,11 +351,11 @@
                 },
                 {
                     "value": "claude-4-sonnet",
-                    "text": "💎 Claude 4 Sonnet"
+                    "text": "Claude 4 Sonnet"
                 },
                 {
                     "value": "claude-4-sonnet-reasoning",
-                    "text": "💎 Claude 4 Sonnet (Reasoning)"
+                    "text": "Claude 4 Sonnet (Reasoning)"
                 },
                 {
                     "value": "claude-4.5-haiku",
@@ -367,11 +367,11 @@
                 },
                 {
                     "value": "claude-4.5-sonnet",
-                    "text": "💎 Claude 4.5 Sonnet"
+                    "text": "Claude 4.5 Sonnet"
                 },
                 {
                     "value": "claude-4.5-sonnet-reasoning",
-                    "text": "💎 Claude 4.5 Sonnet (Reasoning)"
+                    "text": "Claude 4.5 Sonnet (Reasoning)"
                 }
             ],
             "default_value": "gpt-5.1-thinking"
@@ -387,7 +387,7 @@
             "id": "model_4",
             "type": "select",
             "name": "Slot 4: Select Model",
-            "description": "Choose the model that will be used in the fourth slot after the default option. Models marked with 💎 will use premium credits. Please do not select the seperator options.",
+            "description": "Choose the model that will be used in the fourth slot after the default option. Models marked with will use premium credits. Please do not select the seperator options.",
             "options": [
                 {
                     "value": "sep",
@@ -403,11 +403,11 @@
                 },
                 {
                     "value": "gemini-2.5-pro",
-                    "text": "💎 Gemini 2.5 Pro"
+                    "text": "Gemini 2.5 Pro"
                 },
                 {
                     "value": "gemini-3-pro",
-                    "text": "💎 Gemini 3 Pro"
+                    "text": "Gemini 3 Pro"
                 },
                 {
                     "value": "sep",
@@ -419,7 +419,7 @@
                 },
                 {
                     "value": "gpt-5.1-thinking",
-                    "text": "💎 ChatGPT 5 (Reasoning)"
+                    "text": "ChatGPT 5 (Reasoning)"
                 },
                 {
                     "value": "gpt-5.1-instant",
@@ -443,11 +443,11 @@
                 },
                 {
                     "value": "claude-4-sonnet",
-                    "text": "💎 Claude 4 Sonnet"
+                    "text": "Claude 4 Sonnet"
                 },
                 {
                     "value": "claude-4-sonnet-reasoning",
-                    "text": "💎 Claude 4 Sonnet (Reasoning)"
+                    "text": "Claude 4 Sonnet (Reasoning)"
                 },
                 {
                     "value": "claude-4.5-haiku",
@@ -459,11 +459,11 @@
                 },
                 {
                     "value": "claude-4.5-sonnet",
-                    "text": "💎 Claude 4.5 Sonnet"
+                    "text": "Claude 4.5 Sonnet"
                 },
                 {
                     "value": "claude-4.5-sonnet-reasoning",
-                    "text": "💎 Claude 4.5 Sonnet (Reasoning)"
+                    "text": "Claude 4.5 Sonnet (Reasoning)"
                 }
             ],
             "default_value": "claude-4.5-haiku"
@@ -479,7 +479,7 @@
             "id": "model_5",
             "type": "select",
             "name": "Slot 5: Select Model",
-            "description": "Choose the model that will be used in the fifth slot after the default option. Models marked with 💎 will use premium credits. Please do not select the seperator options.",
+            "description": "Choose the model that will be used in the fifth slot after the default option. Models marked with will use premium credits. Please do not select the seperator options.",
             "options": [
                 {
                     "value": "sep",
@@ -495,11 +495,11 @@
                 },
                 {
                     "value": "gemini-2.5-pro",
-                    "text": "💎 Gemini 2.5 Pro"
+                    "text": "Gemini 2.5 Pro"
                 },
                 {
                     "value": "gemini-3-pro",
-                    "text": "💎 Gemini 3 Pro"
+                    "text": "Gemini 3 Pro"
                 },
                 {
                     "value": "sep",
@@ -511,7 +511,7 @@
                 },
                 {
                     "value": "gpt-5.1-thinking",
-                    "text": "💎 ChatGPT 5 (Reasoning)"
+                    "text": "ChatGPT 5 (Reasoning)"
                 },
                 {
                     "value": "gpt-5.1-instant",
@@ -535,11 +535,11 @@
                 },
                 {
                     "value": "claude-4-sonnet",
-                    "text": "💎 Claude 4 Sonnet"
+                    "text": "Claude 4 Sonnet"
                 },
                 {
                     "value": "claude-4-sonnet-reasoning",
-                    "text": "💎 Claude 4 Sonnet (Reasoning)"
+                    "text": "Claude 4 Sonnet (Reasoning)"
                 },
                 {
                     "value": "claude-4.5-haiku",
@@ -551,11 +551,11 @@
                 },
                 {
                     "value": "claude-4.5-sonnet",
-                    "text": "💎 Claude 4.5 Sonnet"
+                    "text": "Claude 4.5 Sonnet"
                 },
                 {
                     "value": "claude-4.5-sonnet-reasoning",
-                    "text": "💎 Claude 4.5 Sonnet (Reasoning)"
+                    "text": "Claude 4.5 Sonnet (Reasoning)"
                 }
             ],
             "default_value": "claude-4.5-sonnet"
