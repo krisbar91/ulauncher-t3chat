@@ -16,7 +16,7 @@ model_list = {
     'gemini-3-pro': 'Gemini 3 Pro',
     'gpt-5-chat': 'ChatGPT 5',
     'gpt-5.1-thinking': 'ChatGPT 5 (Reasoning)',
-    'gpt-5.2-reasoning': 'ChatGPT 5.2 Reasoning',
+    'gpt-5.2-reasoning': 'ChatGPT 5.2 (Reasoning)',
     'gpt-5.1-instant': 'ChatGPT 5.1 (Instant)',
     'gpt-4o': 'ChatGPT 4o',
     'gpt-oss-20b': 'ChatGPT OSS 20B',
